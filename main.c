@@ -1,14 +1,7 @@
 #include<stdio.h>
 #include<time.h>
 
-void date();
-
 void main() {
- date();
-}
-
-
-void date() {
   time_t rawtime;
   struct tm* timeinfo;
 
