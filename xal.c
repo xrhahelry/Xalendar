@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<time.h>
 
-void main() {
+int main() {
   time_t rawtime;
   struct tm* timeinfo;
 
@@ -9,6 +9,7 @@ void main() {
   char y[10];
   char wd[10];
   char md[10];
+  char date[16];
 
   time(&rawtime);
   timeinfo = localtime(&rawtime);
@@ -16,6 +17,7 @@ void main() {
   strftime(y, 10, "%Y", timeinfo);
   strftime(wd, 10, "%a", timeinfo);
   strftime(md, 10, "%d", timeinfo);
+  strftime(date, 16, "%Y %b %d %a", timeinfo);
 
-  printf("%s %s %s %s",y,m,md,wd);
+  puts(date);
 }
