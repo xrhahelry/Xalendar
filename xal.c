@@ -6,7 +6,7 @@
 
 int days[42] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-char my[19],wd[10],md[10],date[16],y[5],mn[3];
+char my[19],md[10],date[16],y[5],mn[3];
 int current_day,month_first_day,current_year, current_month, month_days;
 bool leap = false;
 
@@ -51,7 +51,6 @@ void timeinfo() {
   timeinfo = localtime(&rawtime);
   strftime(my, 19, "    %B %Y", timeinfo);
   strftime(y, 5, "%Y", timeinfo);
-  strftime(wd, 10, "%a", timeinfo);
   strftime(md, 10, "%d", timeinfo);
   strftime(mn, 3, "%m", timeinfo);
   // strftime(date, 16, "%Y %b %d %a", timeinfo);
