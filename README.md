@@ -1,3 +1,3 @@
 # Xalender
 #### Terminal calendar for windows written in c
-#### Only prints full date for now
+#### Prints the calendar for current month with white background for current day
