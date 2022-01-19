@@ -1,0 +1,2 @@
+* Important
+This is the old version of Xal written in C.
