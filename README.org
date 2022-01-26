@@ -1,2 +1,7 @@
-* Important
-This is the old version of Xal written in C.
+* Xalender
+Terminal calendar for windows written in C.
+
+Prints the calendar for current month with white background for current day.
+
+** DEMO:
+[[./images/demo.png]]
